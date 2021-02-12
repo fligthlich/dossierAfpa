@@ -1,1 +1,161 @@
-cvAlex.html
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Mon cv</title>
+</head>
+<body>
+    <!-- en-tête barre de navigation-->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Cv Alexandre</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link" href="cvAlex.html#section1">Formation</a>
+                <a class="nav-item nav-link" href="cvAlex.html#section2">Expériences</a>
+                <a class="nav-item nav-link" href="cvAlex.html#section3">Stages</a>
+                <a class="nav-item nav-link" href="cvAlex.html#contact">contact</a>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <!-- Colonne de gauche informations -->
+    <div class="container-fluid text-center fond">
+        <div class="row content">
+            <div class="col-sm-4 sidenav">
+                <div class="row">
+                    <div class="col-12 marge">
+                        <img class="photo" src="Image2.png" alt="Photo Cv">
+                        <h1>Brassart Alexandre</h1>
+                        <p>Formation CDA</p>
+                    </div>
+                    <div class="col-12 fonts">
+                        <p>24 Rue des Acacias</p>
+                        <p>80480 Saleux</p>
+                        <p>Tel: 07 69 71 08 17</p>
+                        <p>Émail: fligthlich@gmail.com</p>
+                        <p>Permis B</p>
+                        <button type="button" class="btn btn-dark" id="contact" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Contact</button>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Me contacter</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form id="form" action="http://bienvu.net/script.php" method="POST">
+                                            <div class="form-row">
+                                                <div class="form-group col-md-6">
+                                                    <div class="form-row">
+                                                        <div class="form-group col-md-12">
+                                                            <input type="text" class="form-control" id="nom" name="nom" placeholder="Nom et prénom">
+                                                        </div>
+                                                        <div class="form-group col-md-12">
+                                                            <input type="email" class="form-control" name="email" placeholder="Émail">
+                                                        </div>
+                                                    </div>
+                                                </div> 
+                                                <div class="form-group col-md-6">
+                                                    <div class="form-row">
+                                                        <div class="form-group col-md-12 message">
+                                                            <textarea name="message" id="message" cols="30" rows="3" class="form-control "></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-dark" data-dismiss="modal">Annuler</button>
+                                        <button form="form" type="submit" class="btn btn-dark" id="envoyer">Envoyer</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- colonne de droite -->
+            <div class="col-sm-8 text-left">
+                <section class="section" id="section1">
+                    <h2>Formations professionnelles</h2>
+                    <ul class="formation">
+                        <li><h5>Obtention BEP/CAP Métallier serrurier</h5></li>
+                        <li><h5>1998 Niveau BEP/CAP Peintures et revêtements</h5></li>
+                    </ul>
+                </section>
+                <hr>
+                <section class="section" id="section2">
+                    <h2>Expériences professionnelles</h2>
+                    <ul class="society">
+                        <li><h5>Actuellement en formation CDA afpa picardie</h5></li>
+                        <li><h5>2016 à Septembre 2020 Société Le Kap Verre Picardie</h5>
+                            <ul class="branch">
+                                <li>Dépannabe vitrerie (fenêtre pvc, bois, alu, métalliques)</li>
+                                <li>Remplacement châssis Pvc,bois,alu</li>
+                                <li>Métrage, reconnaissance de vitrages (traitements,compositions)</li>
+                                <li>Devis</li>
+                            </ul></li>
+                        <li><h5>Février 2015 à Mars 2016 Auto-entrepreneur SSBASTORE Amiens</h5>
+                            <ul class="branch">
+                                <li>Pose de menuiseries pvc,bois,alu,métalliques</li>
+                                <li>Pose de stores, volets, portails, motorisations, rideaux métalliques, portes de garage mixtes</li>
+                                <li>Petites installations électriques (éclairages, câblages,etc...)</li>
+                            </ul></li>
+                        <li><h5>2013 à Novembre 2014 Société JPR Hutchinson (intérim supplay)</h5>
+                            <ul class="branch">
+                                <li>Confection de joints à partir de bandes calendrées en respect avec procédé de fabrication.Cuisson auto contrôle des joints.</li>
+                            </ul></li>
+                        <li><h5>Mars 2008 à Mars 2013 Société Ponthieux Laurent Amiens</h5>
+                            <ul class="branch">
+                                <li>Pose de menuiseries pvc,bois,alu,métalliques</li>
+                                <li>Pose de stores, volets, portails, motorisations, rideaux métalliques, portes de garage mixtes</li>
+                            </ul></li>
+                        <li><h5>Décembre 2005 à Février 2008 établissement Diruy Amiens (intérim chez Crey’f)</h5>
+                            <ul class="branch">
+                                <li>Pose de menuiseries pvc, métalliques , aluminium, bois</li>
+                                <li>Pose de stores, volets, Portails ,motorisations, rideaux métalliques, Portes de garage mixtes</li>
+                            </ul></li>
+                        <li><h5>Juillet à août 2005 métallier serrurier entreprise Hedoux (pour ADECCO)</h5>
+                            <ul class="branch">
+                                <li>Pose de tout type d’ouvrages métalliques</li>
+                            </ul></li>
+                        <li><h5>Octobre 2002 à Avril 2005 métallier serrurier entreprise SCMS Zi Nord</h5>
+                            <ul class="branch">
+                                <li>Pose de fermetures et serrures</li> 
+                                <li>Pose de tout type d’ouvrages neufs et rénovations</li>
+                                <li>Pose de portes simples , doubles, coupe-feu sur rail et pivotantes avec système de détection</li>
+                                <li>Fabrication de diverses pièces de métallerie à l’aide de plan de fabrication</li> 
+                                <li>Réalisation de soudures sur chantier et atelier avec poste Arc et Mig</li>
+                            </ul></li>
+                        <li><h5> juin 2000 à Septembre 2002 métallier serrurier pour ADECCO établissement SCMS Amiens</h5></li>
+                    </ul>
+                </section>
+                <hr>
+                <section class="section" id="section3">
+                    <h2>Stages professionnelles</h2>
+                    <ul class="stage">
+                        <li><h5>1999/2000 Stages entreprise SCMS ZI Nord Amiens</h5></li>
+                        <li><h5>1997/1998 Stages entreprise BLERY jean Amiens</h5></li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+

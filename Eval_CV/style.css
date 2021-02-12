@@ -1,0 +1,54 @@
+/* Alignement de la boite textarea avec les inputs */
+.message textarea{
+    height: 92px;
+}
+/* style colonne de droite */
+.sidenav{
+    background: grey;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.marge{
+    margin-top: 75px;
+}
+.photo{
+    background-image: url('fond.jpg');
+    border: 2px solid white;
+    border-radius: 50%;
+    box-shadow: 0 0 10px white;
+    width: 40%;
+    margin-left: 20px;
+}
+/* style colonne de gauche */
+.fond{
+    background-image: url('fondGauche.jpg');
+    color: honeydew;
+}
+.fond h5{
+    font-style: oblique;
+    padding: 0.5em ;
+}
+.formation, .stage{
+    list-style-type: none;
+}
+
+.society{
+    list-style-type: none;
+}
+.section h2{
+    border:2px solid black;
+    border-radius: 10px;
+    box-shadow: 0 0 10px honeydew;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.branch{
+    border-left: 0.1rem solid;
+    list-style-type: none;
+    padding-left: 1rem;
+}
+/* cgouleur texte h5 modal */
+.modal h5{
+    color: black;
+}
